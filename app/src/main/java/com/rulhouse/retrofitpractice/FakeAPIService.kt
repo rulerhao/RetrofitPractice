@@ -4,6 +4,11 @@ import retrofit2.Call
 import retrofit2.http.GET
 
 interface FakeAPIService {
-    @GET("/posts/1") //annotation 註解宣告方式定義 HTTP 連線獲取資料方法與指定API後網址
+    //取得單筆資料
+    @GET("/posts/1")
     fun getPost(): Call<JsonplaceholderPost>
+
+    //取得單筆資料
+    @GET("/posts")
+    fun getPosts(): Call<List<JsonplaceholderPost>>
 }
