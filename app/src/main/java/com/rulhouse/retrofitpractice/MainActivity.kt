@@ -32,6 +32,7 @@ class MainActivity : ComponentActivity() {
                     Greeting()
                     GetData.getSingle()
                     GetData.getMultiple()
+                    GetData.postSingle()
                 }
             }
         }
